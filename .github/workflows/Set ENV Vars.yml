@@ -1,19 +1,16 @@
-name : custom GITHUB_ENV 
+name: custom GITHUB_ENV
 
 on:
   workflow_dispatch:
 
 jobs:
-   custom GITHUBEnv:
+  custom_GITHUB_ENV:  
     runs-on: ubuntu-latest
     steps:
-    - name: set the value
-      id : step_one
-      run:
-        echo "action_state=yellow" >> $GITHUBEnv
+      - name: set the value
+        id: step_one
+        run: echo "action_state=yellow" >> $GITHUB_ENV  
 
-    - name: use the value
-      id: step_two
-      run:
-        echo "${{ env.action_state }}" # prints output as 'yellow'    
-  
+      - name: use the value
+        id: step_two
+        run: echo "${{ env.action_state }}"  prints 'yellow'
