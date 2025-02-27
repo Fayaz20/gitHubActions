@@ -12,10 +12,6 @@ jobs:
     name: 'Print the env vars'
     runs-on: ubuntu-latest
 
-    env:
-      Greeting: Dear
-      testvar: value-2
-
     steps:
       - name: print-values-of-env-vars
         run: |
