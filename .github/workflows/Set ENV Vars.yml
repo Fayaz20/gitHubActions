@@ -1,10 +1,10 @@
-name : custom GITHUB_ENV var DEMO
+name : custom GITHUB_ENV 
 
 on:
   workflow_dispatch:
 
 jobs:
-   custom GITHUB_ENV var Demo:
+   custom GITHUB_ENV:
     runs-on: ubuntu-latest
     steps:
     - name: set the value
